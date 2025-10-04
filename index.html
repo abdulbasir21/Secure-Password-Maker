@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Secure Password Maker</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Secure Password Maker</h1>
+   
+    <div class="inputBox">
+        <input type="text" class="field" id="inputField" disabled>
+        <span class="material-symbols-outlined " id="copy">content_copy</span>
+    </div>
+    <input type="range" min="1" max="30" value="8" id="rangeSlider">
+    <div class="passLength" >
+        <p>Password length</p>
+        <span id="sliderValue"></span>
+    </div>
+    <div class="checkbox" >
+        <label for="lowerCase">Include Lowercase Letters(a-z)</label>
+        <input type="checkbox" checked name="lowerCase" id="lowerCase" class="chck">
+    </div>
+    <div class="checkbox">
+        <label for="upperCase">Include Uppercase Letters(A-Z)</label>
+        <input type="checkbox" name="upperCase" id="upperCase" class="chck">
+    </div>
+    <div class="checkbox">
+        <label for="number">Include Numbers(0-9)</label>
+        <input type="checkbox" name="number" id="number" class="chck">
+    </div>
+    <div class="checkbox">
+        <label for="symbol">Include Symbols(@-* )</label>
+        <input type="checkbox" name="symbol" id="symbol" class="chck">
+    </div>
+    <button class="btn" id="genBtn">Generate Password</button>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
